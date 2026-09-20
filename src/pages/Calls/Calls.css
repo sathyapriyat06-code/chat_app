@@ -1,0 +1,170 @@
+.calls-page-container {
+  background-color: var(--bg-color);
+  transition: background-color var(--transition-normal);
+}
+
+.search-calls-wrapper {
+  width: 100%;
+  max-width: 320px;
+}
+
+.calls-list-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border) !important;
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.call-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.call-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.call-arrow {
+  font-size: 1.05rem;
+}
+
+.btn-call-trigger {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all var(--transition-fast);
+}
+
+.btn-call-trigger.audio {
+  background-color: rgba(79, 70, 229, 0.08);
+  color: var(--primary-color);
+}
+
+.btn-call-trigger.audio:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-call-trigger.video {
+  background-color: rgba(6, 182, 212, 0.08);
+  color: var(--secondary-color);
+}
+
+.btn-call-trigger.video:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Fullscreen Calling Dialog Overlay */
+.call-screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #4338CA 100%);
+  z-index: 3000;
+  backdrop-filter: blur(16px);
+}
+
+.call-avatar-wrapper {
+  width: 140px;
+  height: 140px;
+}
+
+.calling-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  z-index: 10;
+}
+
+/* Calling Ripple animations */
+.avatar-ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.avatar-ripple.ringing {
+  animation: callRipple 1.8s infinite ease-out;
+}
+
+.avatar-ripple.active {
+  animation: callRippleActive 3s infinite linear;
+  border: 2px dotted rgba(6, 182, 212, 0.4);
+}
+
+@keyframes callRipple {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes callRippleActive {
+  0% { transform: rotate(0deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1.05); }
+}
+
+/* Call controllers */
+.btn-call-ctrl {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-call-ctrl:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-call-ctrl.active {
+  background-color: white;
+  color: #0F172A;
+  border-color: white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn-decline-call {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  box-shadow: 0 10px 20px -3px rgba(239, 68, 68, 0.4);
+  transition: all var(--transition-fast);
+}
+
+.btn-decline-call:hover {
+  background-color: #DC2626;
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px -3px rgba(239, 68, 68, 0.6);
+}
+
+@media (max-width: 767.98px) {
+  .search-calls-wrapper {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,132 @@
+.groups-page-container {
+  height: 100%;
+  width: 100%;
+}
+
+.groups-left-panel {
+  width: 350px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-sidebar);
+  transition: background-color var(--transition-normal);
+}
+
+.groups-scroll {
+  background-color: var(--bg-sidebar);
+}
+
+.group-channel-card {
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  background-color: var(--bg-sidebar);
+  margin-bottom: 4px;
+}
+
+.group-channel-card:hover {
+  background-color: rgba(79, 70, 229, 0.05);
+}
+
+.group-channel-card.active {
+  background-color: rgba(79, 70, 229, 0.1);
+  border-left: 3px solid var(--primary-color);
+}
+
+.group-card-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.group-card-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.group-card-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.group-card-last-msg {
+  font-size: 0.85rem;
+}
+
+/* Sender details on group messages */
+.group-message-block {
+  width: 100%;
+}
+
+.group-sender-name {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-left: 8px;
+}
+
+[data-theme='dark'] .group-sender-name {
+  color: var(--secondary-color);
+}
+
+/* Member drawer */
+.group-member-drawer {
+  width: 280px;
+  height: 100%;
+  flex-shrink: 0;
+  overflow-y: auto;
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.group-desc {
+  line-height: 1.5;
+}
+
+.member-avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.member-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.member-role {
+  font-size: 0.72rem;
+}
+
+.fs-9 {
+  font-size: 0.72rem;
+}
+
+.btn-action-icon.active {
+  background-color: rgba(79, 70, 229, 0.1);
+  color: var(--primary-color);
+}
+
+/* Responsive details */
+@media (max-width: 991.98px) {
+  .group-member-drawer {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 100;
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .groups-left-panel {
+    width: 100%;
+  }
+  
+  .group-member-drawer {
+    top: 70px;
+  }
+}

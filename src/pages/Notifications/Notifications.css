@@ -1,0 +1,16 @@
+.notifications-page-container {
+  background-color: var(--bg-color);
+  transition: background-color var(--transition-normal);
+}
+
+.btn-mark-all {
+  border-radius: var(--border-radius-md);
+  font-weight: 550;
+  transition: all var(--transition-fast);
+}
+
+.btn-mark-all:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}

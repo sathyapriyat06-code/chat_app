@@ -1,0 +1,57 @@
+.register-page-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #4338CA 100%);
+  position: relative;
+  padding: 3rem 0;
+}
+
+.register-theme-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 10;
+}
+
+.register-glass-card {
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Avatar pre-upload styles */
+.avatar-preview-container {
+  width: 100px;
+  height: 100px;
+}
+
+.register-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid rgba(79, 70, 229, 0.2);
+}
+
+.register-camera-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  transition: all var(--transition-fast);
+}
+
+.register-camera-btn:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+[data-theme='dark'] .register-camera-btn {
+  border-color: var(--card-bg);
+}

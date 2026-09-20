@@ -1,0 +1,39 @@
+.user-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border) !important;
+  border-radius: var(--border-radius-lg);
+  transition: border-color var(--transition-normal);
+}
+
+.user-card-avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid rgba(79, 70, 229, 0.1);
+}
+
+.status-ring {
+  width: 18px;
+  height: 18px;
+  transform: translate(2px, 2px);
+}
+
+.user-card-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.user-card-bio {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  height: 4.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+[data-theme='dark'] .user-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2) !important;
+}

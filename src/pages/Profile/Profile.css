@@ -1,0 +1,23 @@
+.profile-page-container {
+  background-color: var(--bg-color);
+  transition: background-color var(--transition-normal);
+}
+
+/* Success Alert Toast */
+.success-toast-alert {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius-md);
+  z-index: 2000;
+}
+
+[data-theme='dark'] .success-toast-alert {
+  background: linear-gradient(135deg, var(--card-bg) 0%, #0F172A 100%);
+}
+
+.text-success-indicator {
+  color: var(--success-color);
+}

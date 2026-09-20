@@ -1,0 +1,117 @@
+.chat-page-container {
+  height: 100%;
+  width: 100%;
+}
+
+.chat-left-panel {
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.chat-right-panel {
+  background-color: var(--bg-chat-area);
+  transition: background-color var(--transition-normal);
+}
+
+.chat-header-bar {
+  height: 70px;
+  flex-shrink: 0;
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.active-chat-avatar {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+
+.active-user-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.active-user-status-text {
+  font-size: 0.78rem;
+  color: var(--success-color);
+  font-weight: 500;
+}
+
+.messages-container {
+  overflow-y: auto;
+  background-color: var(--bg-chat-area);
+  /* A very premium subtle dot grid wallpaper overlay */
+  background-image: radial-gradient(rgba(79, 70, 229, 0.04) 1px, transparent 0);
+  background-size: 16px 16px;
+  transition: background-color var(--transition-normal);
+}
+
+[data-theme='dark'] .messages-container {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 0);
+}
+
+.chat-input-bar {
+  background-color: var(--bg-sidebar);
+  border-top: 1px solid var(--card-border);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.message-input-box {
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--card-border);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.message-input-box:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: var(--card-bg);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+  color: var(--text-color);
+}
+
+.btn-action-icon {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.btn-action-icon:hover {
+  background-color: rgba(79, 70, 229, 0.08);
+  color: var(--primary-color);
+}
+
+.send-message-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-md) !important;
+  padding: 0 !important;
+}
+
+.logo-icon-send {
+  font-size: 1rem;
+}
+
+.btn-back-mobile {
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+}
+
+/* Mobile responsive layout */
+@media (max-width: 767.98px) {
+  .chat-left-panel {
+    width: 100%;
+  }
+}

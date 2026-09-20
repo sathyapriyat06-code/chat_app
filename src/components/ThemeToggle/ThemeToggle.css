@@ -1,0 +1,40 @@
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon {
+  font-size: 1.25rem;
+  transition: color var(--transition-fast);
+}
+
+.theme-icon.sun {
+  color: var(--warning-color);
+}
+
+.theme-icon.moon {
+  color: var(--primary-color);
+}

@@ -1,0 +1,102 @@
+.main-footer {
+  background-color: var(--bg-sidebar);
+  border-top: 1px solid var(--card-border);
+  padding: 5rem 0 0 0;
+  color: var(--text-color);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.logo-icon-container.small {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-icon-container.small .logo-icon {
+  font-size: 0.95rem;
+}
+
+.footer-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.social-icon:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.footer-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.newsletter-form .form-control {
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--card-border);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.newsletter-form .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+  border-color: var(--primary-color);
+  background-color: var(--card-bg);
+}
+
+.footer-divider {
+  border-top: 1px solid var(--card-border);
+  margin: 4rem 0 2rem 0;
+  opacity: 1;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.footer-sub-links a {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-sub-links a:hover {
+  color: var(--primary-color);
+}

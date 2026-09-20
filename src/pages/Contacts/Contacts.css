@@ -1,0 +1,15 @@
+.contacts-page-container {
+  background-color: var(--bg-color);
+  transition: background-color var(--transition-normal);
+}
+
+.search-contacts-wrapper {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (max-width: 767.98px) {
+  .search-contacts-wrapper {
+    max-width: 100%;
+  }
+}

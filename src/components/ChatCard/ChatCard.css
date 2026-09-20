@@ -1,0 +1,47 @@
+.chat-card {
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  background-color: var(--bg-sidebar);
+  margin-bottom: 4px;
+}
+
+.chat-card:hover {
+  background-color: rgba(79, 70, 229, 0.05);
+}
+
+.chat-card.active {
+  background-color: rgba(79, 70, 229, 0.1);
+  border-left: 3px solid var(--primary-color);
+}
+
+.chat-card-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+}
+
+.chat-card-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.chat-card-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.chat-card-last-msg {
+  font-size: 0.85rem;
+}
+
+.chat-card-unread {
+  font-size: 0.7rem;
+  padding: 0.35em 0.6em;
+}
